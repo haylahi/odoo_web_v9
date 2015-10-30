@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+	<template id="layout" inherit_id="website.layout">  
+	    <xpath expr="//html/body" position="inside">
+	        <script type="text/javascript"  src="/bi_ecommerce/static/src/js/bootstrap.min.js"></script>						
+            	<script type="text/javascript"  src="/bi_ecommerce/static/src/js/owl.carousel.min.js"></script> 
+            	<script type="text/javascript"  src="/bi_ecommerce/static/src/js/custom.js"></script>  
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/jquery.themepunch.plugins.min.js"></script>  
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/jquery.themepunch.revolution.min.js"></script>  
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/jquery-1.10.2.js"></script>  
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/modernizr.js"></script>  
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/onscreen.js"></script>  
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/script.js"></script>  
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/switcher.js"></script>  
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/new_custom_slider.js"></script>     
+		<script type="text/javascript"  src="/bi_ecommerce/static/src/js/new_custom_slider_2.js"></script>         
+
+            		
+	    </xpath>
+	 	  	
+	    <xpath expr="//html/head" position="inside">
+		 <link href="/bi_ecommerce/static/src/css/bootstrap.min.css" rel="stylesheet"/>
+    		 <link href="/bi_ecommerce/static/src/css/animate.css" rel="stylesheet"/>
+    		 <link href="/bi_ecommerce/static/src/css/owl.carousel.css" rel="stylesheet"/>
+    		 <link href="/bi_ecommerce/static/src/css/responsive.css" rel="stylesheet"/>
+    		 <link href="/bi_ecommerce/static/src/css/revolution.css" rel="stylesheet"/>
+		 <link href="/bi_ecommerce/static/src/css/style.css" rel="stylesheet"/>
+		 <link href="/bi_ecommerce/static/src/css/orange.css" rel="stylesheet"/>
+		<link href="/bi_ecommerce/static/src/css/font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet"/>
+		<link href="/bi_ecommerce/static/src/css/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
+
+    		 <link rel="shortcut icon" href="/bi_ecommerce/static/src/img/favicon.ico" type="image/x-icon" />
+
+   
+	    </xpath>
+		 	 	
+       </template>   
+
+<template id="homepage_body" inherit_id="website.homepage">
+    <xpath expr="//div" position="inside">
+	<!-- SLIDER CONTENT -->
+<div class="tp-banner-container">
+		<div class="tp-banner" >
+			<ul>
+			
+				<li data-transition="curtain-2" data-slotamount="7" data-masterspeed="500" >
+					<img src="/bi_ecommerce/static/src/img/slide2.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+					<!--<div class="tp-caption skewfromleft" data-x="2" data-y="141" data-speed="2000" data-start="1200" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index: 4"><span><img src="/bi_ecommerce/static/src/img/slide-girl.png" alt="" /></span></div>
+
+					<div class="tp-caption skewfromright" data-x="650" data-y="162" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4; font-size:40px;"><span class="slide2-text1">SHOPPING</span></div>
+
+					<div class="tp-caption skewfromleft" data-x="650" data-y="224" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span class="slide2-text2">More then branding agency</span></div>
+
+					<div class="tp-caption skewfromright" data-x="650" data-y="294" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4; font-size:30px;"><span class="slide2-text1">More then branding</span></div>
+
+					<div class="tp-caption skewfromleft " data-x="650" data-y="375" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><a href="#" title="" class="slide2-btn">Purchase on Themeforest</a></div>
+
+				</li>
+				
+				<li data-transition="3dcurtain-vertical" data-slotamount="7" data-masterspeed="500" >
+					<img src="/bi_ecommerce/static/src/img/slide4.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+					<div class="tp-caption lfl" data-x="-20" data-y="12" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="/bi_ecommerce/static/src/img/boy.png" alt="" /></span></div>
+
+					<div class="tp-caption lfr" data-x="290" data-y="12" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img style="z-index:0;" src="/bi_ecommerce/static/src/img/girl1.png" alt="" /></span></div>
+
+					<div class="tp-caption lfb" data-x="150" data-y="12" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="/bi_ecommerce/static/src/img/girl2.png" alt="" /></span></div>
+
+					
+
+					<div class="tp-caption lft" data-x="640" data-y="230" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="/bi_ecommerce/static/src/img/box1.png" alt="" /></span></div>
+
+					<div class="tp-caption lfb" data-x="1045" data-y="400" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="/bi_ecommerce/static/src/img/box2.png" alt="" /></span></div>
+
+					<div class="tp-caption skewfromright" data-x="670" data-y="205" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style=""><h2 class="slide4-text1">More then <i>branding</i> agancy</h2></div>
+
+					<div class="tp-caption skewfromleft" data-x="670" data-y="250" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index:8;"><h2 class="slide4-text2">Discover more about store Advanced Technology</h2></div>
+
+					<div class="tp-caption skewfromright" data-x="670" data-y="290" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index:8;"><p class="slide4-text3">Sed eget tellus sapien. Proinupmoso etiamgo velmis dolor amet pPro-<br/>inupmoso  etiamgo velmis dolor amet promo elit.</p></div>
+
+					<div class="tp-caption skewfromright" data-x="670" data-y="360" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><a href="#" title="" class="slide2-btn">Purchase on Themeforest</a></div>
+				</li>
+
+				<li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="500" >
+					<img src="/bi_ecommerce/static/src/img/slide1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+					<div class="tp-caption skewfromleft" data-x="292" data-y="196" data-speed="1500" data-start="800" data-easing="SlowMo.ease" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span class="slide-text1">Shop<i>inn</i></span></div>
+
+					<div class="tp-caption skewfromright" data-x="158" data-y="244" data-speed="1500" data-start="800" data-easing="Sine.easeInOut" data-endspeed="500" data-captionhidden="on" style="font-size:30px; z-index: 4"><span class="slide-text1">More then branding <i>agency</i></span></div>
+
+					<div class="tp-caption fade" data-x="193" data-y="285" data-speed="1500" data-start="800" data-easing="Circ.easeIn" data-endspeed="500" data-captionhidden="on" style="font-size:14px; z-index: 4"><span class="slide-text1"><i>Discover more about store Advanced Technology</i></span></div>
+
+					<div class="tp-caption sfr" data-x="314" data-y="326" data-speed="1000" data-start="800" data-easing="easeInBounce" data-endspeed="500" data-captionhidden="on" style="font-size:14px; z-index: 4"><a class="slide-text1-btn" href="#" title="">VIEW MORE</a></div>
+
+					<div class="tp-caption lfr" data-x="723" data-y="88"  data-speed="1500" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index: 4;"><img src="/bi_ecommerce/static/src/img/slide-hand.png" alt="" /></div>
+
+				</li>
+
+				<li data-transition="boxslide" data-slotamount="7" data-masterspeed="500" >
+					<img src="/bi_ecommerce/static/src/img/slide3.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+					<div class="tp-caption lfb" data-x="2" data-y="2" data-speed="2000" data-start="800" data-easing="Power0.easeIn" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="/bi_ecommerce/static/src/img/balloons.png" alt="" /></span></div>
+
+					<div class="tp-caption skewfromleft" data-x="680" data-y="210" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><h2 class="slide3-text1"> our most complete <i>WooCommerce</i> theme yet!</h2></div>
+
+					<div class="tp-caption skewfromright" data-x="680" data-y="252" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4">
+						<ul class="slide3-list">
+							<li><i class="fa fa-bitbucket"></i><span>Truly Fantastic Theme For Your Shop Venture</span></li>
+							<li><i class="fa fa-shopping-cart"></i><span>Buy It Now! Fantastic Deals</span></li>
+							<li><i class="fa fa-thumb-tack"></i><span>For More Information Call +386 40 000 1111 now!</span></li>
+							<li><i class="fa fa-lightbulb-o"></i><span>Buy It On Themeforest For Only $55</span></li>
+						</ul>
+					</div>
+
+					<div class="tp-caption" data-x="-20" data-y="95" data-speed="500" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="/bi_ecommerce/static/src/img/slide-mobile.png" alt="" /></span></div>
+-->
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+<section class="block remove-gap">
+	<div class="container">
+		<div class="heading1">
+			<h2><i>FEATURED </i> PRODUCTS</h2>
+			<span>BRAND FOR EVERY STYLE. FIND YOURS.</span>
+		</div>
+	<div id="product-sales">	
+		<div class="row">
+			<div class="col-md-3">
+				<div class="shop-products">
+					<div class="shop-product-thumb">
+						<img src="/bi_ecommerce/static/src/img/products1.jpg" alt="" />
+						<span>NEW</span>
+						<a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+					<h3>Inspiration of a Colorful</h3>
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+						</ul>
+					<p>$250</p>
+					<p class="save-offer">$350</p>
+				</div>
+			</div>	
+
+			<div class="col-md-3">
+				<div class="shop-products">
+					<div class="shop-product-thumb">
+						<img src="/bi_ecommerce/static/src/img/products2.jpg" alt="" />
+						<span>NEW</span>
+						<a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+					<h3>Inspiration of a Colorful</h3>
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+						</ul>
+					<p>$250</p>
+					
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="shop-products">
+					<div class="shop-product-thumb">
+						<img src="/bi_ecommerce/static/src/img/products3.jpg" alt="" />
+						<span>NEW</span>
+						<a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+					<h3>Inspiration of a Colorful</h3>
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+						</ul>
+					<p>$250</p>
+					
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="shop-products">
+					<div class="shop-product-thumb">
+						<img src="/bi_ecommerce/static/src/img/products4.jpg" alt="" />
+						<span>NEW</span>
+						<a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+					<h3>Inspiration of a Colorful</h3>
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+						</ul>
+					<p>$250</p>
+					
+				</div>
+			</div>
+
+		
+		</div>
+	</div>
+	</div>
+</section>
+
+<!-- home page content -->
+
+<section class="block" id="latest-deal">
+	<div class="fixed-img sec-bg1"></div>
+	<div class="container">
+		<div class="latest-deal">
+			<h3>100 Kindle Books for <i>$2.99</i> or less</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare porttitor diam, a accumsan justo laoreet suscipit. Maecenas at bibendum nunc</p>
+		</div>
+	</div>
+</section>
+
+
+<section class="block remove-gap">
+	<div class="container">
+		<div class="heading1">
+			<h2><i>LATEST </i> PRODUCTS</h2>
+			<span>BRAND FOR EVERY STYLE. FIND YOURS.</span>
+		</div>
+	<div id="product-sales">	
+		<div class="row">
+			<div class="col-md-3">
+				<div class="shop-products">
+					<div class="shop-product-thumb">
+						<img src="/bi_ecommerce/static/src/img/products1.jpg" alt="" />
+						<span>NEW</span>
+						<a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+					<h3>Inspiration of a Colorful</h3>
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+						</ul>
+					<p>$250</p>
+					<p class="save-offer">$350</p>
+				</div>
+			</div>	
+
+			<div class="col-md-3">
+				<div class="shop-products">
+					<div class="shop-product-thumb">
+						<img src="/bi_ecommerce/static/src/img/products2.jpg" alt="" />
+						<span>NEW</span>
+						<a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+					<h3>Inspiration of a Colorful</h3>
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+						</ul>
+					<p>$250</p>
+					
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="shop-products">
+					<div class="shop-product-thumb">
+						<img src="/bi_ecommerce/static/src/img/products3.jpg" alt="" />
+						<span>NEW</span>
+						<a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+					<h3>Inspiration of a Colorful</h3>
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+						</ul>
+					<p>$250</p>
+					
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="shop-products">
+					<div class="shop-product-thumb">
+						<img src="/bi_ecommerce/static/src/img/products4.jpg" alt="" />
+						<span>NEW</span>
+						<a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+					<h3>Inspiration of a Colorful</h3>
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+							<li class="un-rate"><i class="fa fa-star"></i></li>
+						</ul>
+					<p>$250</p>
+					
+				</div>
+			</div>
+
+		
+		</div>
+	</div>
+	</div>
+</section>
+
+
+<section class="block">
+	<div class="container">
+		<div class="heading1">
+			<h2><i>PRODUCT </i>ON SALE</h2>
+			<span>BRAND FOR EVERY STYLE. FIND YOURS.</span>
+		</div>
+		
+		<div class="section-tab2">
+				
+			<!-- tabs -->
+			<div class="sky-tabs sky-tabs-pos-top-left sky-tabs-anim-flip">
+
+				
+				
+				
+				
+				
+				
+				
+				<input type="radio" name="sky-tabs" id="sky-tab5" class="sky-tab-content-5" />
+				<label for="sky-tab5"><span><span>SHIRTS</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4" />
+				<label for="sky-tab4"><span><span>SHOES</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3" />
+				<label for="sky-tab3"><span><span>CAPS</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2" />
+				<label for="sky-tab2"><span><span>BEAUTY</span></span></label>
+				
+				<input type="radio" name="sky-tabs" checked="true" id="sky-tab1" class="sky-tab-content-1" />
+				<label for="sky-tab1"><span><span>PAINTS</span></span></label>
+				
+							
+				<ul>
+					<li class="sky-tab-content-1">	
+						<div class="row">
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller11.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller22.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller33.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller44.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+	
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller55.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller66.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller77.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller88.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+	
+						</div>	
+
+					
+					</li>
+					
+					<li class="sky-tab-content-2">
+						
+							<div class="row">
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller11.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller22.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller33.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+		
+							</div>
+					
+					</li>
+					
+					<li class="sky-tab-content-3">
+					
+						<div class="row">
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller11.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="best-seller seller3">
+									<img alt="" src="/bi_ecommerce/static/src/img/seller22.jpg"/>
+									<h3>BEST KIDS DESIGN 2014</h3>
+									
+									<ul class="tooltip-btn">
+										<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+										<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+									</ul>
+									<a href="#" title="">DETAILS</a>
+									<span><i>$360</i>$460</span>
+								</div>
+							</div>
+						</div>
+
+				
+					
+					</li>
+				
+					<li class="sky-tab-content-4">
+						
+							<div class="row">
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller11.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller22.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller33.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller44.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+		
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller55.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+		
+							</div>
+
+					</li>
+					
+					<li class="sky-tab-content-5">
+					
+					<div id="product-shirt">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller11.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller22.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller33.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="best-seller seller3">
+										<img alt="" src="/bi_ecommerce/static/src/img/seller44.jpg"/>
+										<h3>BEST KIDS DESIGN 2014</h3>
+										
+										<ul class="tooltip-btn">
+											<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+											<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+										</ul>
+										<a href="#" title="">DETAILS</a>
+										<span><i>$360</i>$460</span>
+									</div>
+								</div>
+		
+							</div>
+					</div>
+					
+						
+					</li>
+				</ul>
+			</div>	
+			
+				</div>
+
+				
+		</div>
+</section>
+<!-- Brands
+<section id="brands">
+	<div class="fixed-img sec-bg3"></div>
+	<div class="container">
+		<span><i>OUR</i> BRANDS</span>
+		<div class="brands">			
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand1.png" alt="" /></a>
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand2.png" alt="" /></a>
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand3.png" alt="" /></a>
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand4.png" alt="" /></a>
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand5.png" alt="" /></a>
+			
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand6.png" alt="" /></a>
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand7.png" alt="" /></a>
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand5.png" alt="" /></a>
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand4.png" alt="" /></a>
+			<a href="#" title=""><img src="/bi_ecommerce/static/src/img/brand1.png" alt="" /></a>
+		</div>
+	</div>
+	
+</section>
+-->
+
+
+
+<section class="block">
+	<div class="container">
+		<div class="heading1">
+			<h2><i>LATEST </i>CATEGORIES</h2>
+			<span>BRAND FOR EVERY STYLE. FIND YOURS.</span>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="latest-categories">
+					<img src="/bi_ecommerce/static/src/img/latest-product.jpg" alt="" />
+					<h3>Homeland Caps Respon</h3>
+					<ul>
+						<li><i class="fa fa-angle-right"></i><p>Ultra Light VAIO Pro Laptops</p></li>
+						<li><i class="fa fa-angle-right"></i><p>VAIO Duo Tablet &amp; PC In One</p></li>
+						<li><i class="fa fa-angle-right"></i><p>VAIO Outlet Clearance</p></li>
+						<li><i class="fa fa-angle-right"></i><p>16GB Xperia Tablet Z</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="latest-categories">
+					<img src="/bi_ecommerce/static/src/img/latest-product2.jpg" alt="" />
+					<h3>Homeland Caps Respon</h3>
+					<ul>
+						<li><i class="fa fa-angle-right"></i><p>Ultra Light VAIO Pro Laptops</p></li>
+						<li><i class="fa fa-angle-right"></i><p>VAIO Duo Tablet &amp; PC In One</p></li>
+						<li><i class="fa fa-angle-right"></i><p>VAIO Outlet Clearance</p></li>
+						<li><i class="fa fa-angle-right"></i><p>16GB Xperia Tablet Z</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="latest-categories">
+					<img src="/bi_ecommerce/static/src/img/latest-product3.jpg" alt="" />
+					<h3>Homeland Caps Respon</h3>
+					<ul>
+						<li><i class="fa fa-angle-right"></i><p>Ultra Light VAIO Pro Laptops</p></li>
+						<li><i class="fa fa-angle-right"></i><p>VAIO Duo Tablet &amp; PC In One</p></li>
+						<li><i class="fa fa-angle-right"></i><p>VAIO Outlet Clearance</p></li>
+						<li><i class="fa fa-angle-right"></i><p>16GB Xperia Tablet Z</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="latest-categories">
+					<img src="/bi_ecommerce/static/src/img/latest-product4.jpg" alt="" />
+					<h3>Homeland Caps Respon</h3>
+					<ul>
+						<li><i class="fa fa-angle-right"></i><p>Ultra Light VAIO Pro Laptops</p></li>
+						<li><i class="fa fa-angle-right"></i><p>VAIO Duo Tablet &amp; PC In One</p></li>
+						<li><i class="fa fa-angle-right"></i><p>VAIO Outlet Clearance</p></li>
+						<li><i class="fa fa-angle-right"></i><p>16GB Xperia Tablet Z</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+   </xpath>
+</template>
+
+
+
+
+	
+
+ <template id="layout_footer_main" inherit_id="website.footer_default" name="Footer Main">
+    <xpath expr="//div[@id='footer']" position="replace">
+	    
+<!-- FOOTER CONTENT -->
+
+      <footer class="block">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-about">
+					<h3><i>ABOUT</i> US</h3>
+					<p>BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions. </p>
+					<ul>
+						<li><span><i class="fa fa-mobile"></i></span><p>Phone:   + 98392039330</p><p>Fax:        + 98392039330</p></li>
+						<li><span><i class="fa fa-envelope-o"></i></span><p>Email:       meinto@tolee.com</p><p>Address:   Excel Tower OPG Rpad</p></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="footer-product">
+					<h3><i>RECENT</i> PRODUCT</h3>
+					<span><img src="/bi_ecommerce/static/src/img/footer-product.jpg" alt="" /></span>
+					<h4><a href="#" title="">Best Offer Seller This Dress</a></h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry inprinting.</p>
+					<ul>
+						<li><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+						<li><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="footer-post">
+				<h3><i>BLOG</i> POST</h3>
+					<ul>
+						<li><a href="#" title="">Consectetur Adipisicing</a><i>Novermber 20,2013</i></li>
+						<li><a href="#" title="">Consectetur Adipisicing</a><i>Novermber 20,2013</i></li>
+						<li><a href="#" title="">Consectetur Adipisicing</a><i>Novermber 20,2013</i></li>
+						<li><a href="#" title="">Consectetur Adipisicing</a><i>Novermber 20,2013</i></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<h3><i>HOT</i> DEALS</h3>
+				<div class="footer-deal">
+					<div class="footer-deals">
+						<a href="#" title=""><img src="/bi_ecommerce/static/src/img/footer-deal.jpg" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="/bi_ecommerce/static/src/img/footer-deal2.jpg" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="/bi_ecommerce/static/src/img/footer-deal3.jpg" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="/bi_ecommerce/static/src/img/footer-deal4.jpg" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="/bi_ecommerce/static/src/img/footer-deal5.jpg" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="/bi_ecommerce/static/src/img/footer-deal6.jpg" alt="" /><span>30% <i>Off</i></span></a>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+    </footer>
+    
+    <div class="bottom-line">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="payment-accept">
+					<span>Payments We Accpet</span>
+					<ul>
+						<li><a href="aaa.com" onclick="window.open(this.href); return false;" title=""><img src="/bi_ecommerce/static/src/img/payment1.png" alt="" /></a></li>
+						<li><a href="#" title=""><img src="/bi_ecommerce/static/src/img/payment2.png" alt="" /></a></li>
+						<li><a href="#" title=""><img src="/bi_ecommerce/static/src/img/payment3.png" alt="" /></a></li>
+						<li><a href="#" title=""><img src="/bi_ecommerce/static/src/img/payment4.png" alt="" /></a></li>
+						<li><a href="#" title=""><img src="/bi_ecommerce/static/src/img/payment5.png" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-6">
+				<ul class="bottom-menu">
+					<li><a href="#" title="">Shopping Cart</a></li>
+					<li><a href="#" title="">Checkout</a></li>
+					<li><a href="#" title="">My Account</a></li>
+					<li><a href="#" title="">Contact Us</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<span> All right reserved. Copyright ©   <i>BrowseInfo</i>.</span>
+</div>
+
+    </xpath>
+ </template>
+        <!-- <template id ="replace_free_website" inherit_id="website.layout_footer_copyright">
+            <xpath expr="//div[@class='container mt16 mb8']" position="replace">
+
+            </xpath>
+        </template>-->
+ 
+
+
+ 
+ 
+ 
+     </data>
+</openerp>

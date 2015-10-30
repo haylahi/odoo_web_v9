@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+	<template id="layout" inherit_id="website.layout">  
+	    <xpath expr="//html/body" position="inside">
+	        <script type="text/javascript"  src="/bi_ecommerce/static/src/js/bootstrap.min.js"></script>						
+            	<script type="text/javascript"  src="/bi_ecommerce/static/src/js/owl.carousel.min.js"></script> 
+            	<script type="text/javascript"  src="/bi_ecommerce/static/src/js/custom.js"></script>  
+            	
+            		
+	    </xpath>
+	 	  	
+	    <xpath expr="//html/head" position="inside">
+		 <link href="/bi_ecommerce/static/src/css/bootstrap.min.css" rel="stylesheet"/>
+    		 <link href="/bi_ecommerce/static/src/css/animate.css" rel="stylesheet"/>
+    		 <link href="/bi_ecommerce/static/src/css/owl.carousel.css" rel="stylesheet"/>
+    		 <link href="/bi_ecommerce/static/src/css/responsive.css" rel="stylesheet"/>
+    		 <link href="/bi_ecommerce/static/src/css/revolution.css" rel="stylesheet"/>
+		 <link href="/bi_ecommerce/static/src/css/style.css" rel="stylesheet"/>
+		 <link href="/bi_ecommerce/static/src/css/orange.css" rel="stylesheet"/>
+    		 <link rel="shortcut icon" href="/bi_ecommerce/static/src/img/favicon.ico" type="image/x-icon" />
+
+   
+	    </xpath>
+		 	 	
+       </template>   
+
+
+
+
+<template id="homepage_top_header" inherit_id="website.layout">			
+	    
+<!-- FOOTER CONTENT -->
+  <xpath expr="//footer" position="replace">
+      <footer class="block">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-about">
+					<h3><i>ABOUT</i> US</h3>
+					<p>BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions. </p>
+					<ul>
+						<li><span><i class="fa fa-mobile"></i></span><p>Phone:   + 98392039330</p><p>Fax:        + 98392039330</p></li>
+						<li><span><i class="fa fa-envelope-o"></i></span><p>Email:       meinto@tolee.com</p><p>Address:   Excel Tower OPG Rpad</p></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="footer-product">
+					<h3><i>RECENT</i> PRODUCT</h3>
+					<span><img src="images/footer-product.html" alt="" /></span>
+					<h4><a href="#" title="">Best Offer Seller This Dress</a></h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry inprinting.</p>
+					<ul>
+						<li><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+						<li><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="footer-post">
+				<h3><i>BLOG</i> POST</h3>
+					<ul>
+						<li><a href="#" title="">Consectetur Adipisicing</a><i>Novermber 20,2013</i></li>
+						<li><a href="#" title="">Consectetur Adipisicing</a><i>Novermber 20,2013</i></li>
+						<li><a href="#" title="">Consectetur Adipisicing</a><i>Novermber 20,2013</i></li>
+						<li><a href="#" title="">Consectetur Adipisicing</a><i>Novermber 20,2013</i></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<h3><i>HOT</i> DEALS</h3>
+				<div class="footer-deal">
+					<div class="footer-deals">
+						<a href="#" title=""><img src="images/footer-deal.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal2.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal3.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal4.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal5.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal6.html" alt="" /><span>30% <i>Off</i></span></a>
+					</div>
+					
+					<div class="footer-deals">
+						<a href="#" title=""><img src="images/footer-deal.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal2.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal3.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal4.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal5.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal6.html" alt="" /><span>30% <i>Off</i></span></a>
+					</div>
+					
+					<div class="footer-deals">
+						<a href="#" title=""><img src="images/footer-deal.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal2.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal3.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal4.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal5.html" alt="" /><span>30% <i>Off</i></span></a>
+						<a href="#" title=""><img src="images/footer-deal6.html" alt="" /><span>30% <i>Off</i></span></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+    </footer>
+    </xpath>
+ </template>
+     </data>
+</openerp>
